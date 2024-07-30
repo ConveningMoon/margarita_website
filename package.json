@@ -2,11 +2,11 @@
   "name": "margaritaweb",
   "version": "0.0.1",
   "description": "Website for Margarita",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "start": "json-server --watch src/db.json",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/app.js"
   },
   "author": "James Dylan",
   "license": "ISC",
@@ -16,6 +16,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "env-var": "^7.5.0",
+    "express": "^4.19.2",
     "json-server": "^1.0.0-beta.1"
   }
 }
