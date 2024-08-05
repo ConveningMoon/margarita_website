@@ -6,7 +6,7 @@ const main = () => {
 
     console.log('\n\nThis came from the server: ');
     startServer({
-        port: envs.PORT,
+        port: envs.PORT || 3000,
         public_path: envs.PUBLIC_PATH
     })
 }
