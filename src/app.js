@@ -5,10 +5,11 @@ const main = () => {
     console.log(`Environment variables: ${envs}`);
 
     console.log('\n\nThis came from the server: ');
-    startServer({
-        port: envs.PORT || 3000,
-        public_path: envs.PUBLIC_PATH
-    })
+    // startServer({
+    //     port: envs.PORT,
+    //     public_path: envs.PUBLIC_PATH
+    // })
+    startServer();
 }
 
 (async() => {

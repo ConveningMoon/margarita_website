@@ -6,10 +6,9 @@ import { router } from '../routes/profile.routes.js';
 //const express = require('express');
 //const path = require('path');
 
-export const startServer = (options) => {
-    const { port, public_path } = options;
-    //console.log(port);
-    //console.log(public_path);
+//export const startServer = (options) => {
+export const startServer = () => {
+    //const { port, public_path } = options;
     
     //Express for middleware
     const app = express();
@@ -27,6 +26,8 @@ export const startServer = (options) => {
     //     const indexPath = path.join(__dirname + `../../${public_path}/index.html`);
     //     res.sendFile(indexPath);
     // })
+
+    const port = process.env.PORT || 3000
 
     app.listen(port, () => {
         console.log(`Listening to the port ${port}`);
