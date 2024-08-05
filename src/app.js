@@ -4,7 +4,7 @@ import { startServer } from './server/server.js';
 const main = () => {
     console.log(`Environment variables: ${envs}`);
 
-    console.log('\n\nPor parte del server: ');
+    console.log('\n\nThis came from the server: ');
     startServer({
         port: envs.PORT,
         public_path: envs.PUBLIC_PATH
