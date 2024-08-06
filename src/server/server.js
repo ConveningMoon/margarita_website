@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import express from "express";
 import mongoose from "mongoose";
-import path from "path";
+//import path from "path";
 import { router } from '../routes/profile.routes.js';
 //const express = require('express');
 //const path = require('path');
@@ -27,7 +27,7 @@ export const startServer = () => {
     //     res.sendFile(indexPath);
     // })
 
-    const port = process.env.PORT || 3000
+    const port = process.env.PORT || 3000;
 
     app.listen(port, () => {
         console.log(`Listening to the port ${port}`);
