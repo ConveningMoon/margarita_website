@@ -19,7 +19,7 @@ const getProfile = async(req, res, next) => {
     try {
         profile = await Profile.findById(id);
         if(!profile) {
-            return res.statis(404).json(
+            return res.status(404).json(
                 {
                     message: 'The profile was not found'
                 }
