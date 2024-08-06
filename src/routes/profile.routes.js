@@ -133,7 +133,7 @@ router.delete('/:id', getProfile, async(req, res) => {
             _id: profile._id
         });
         res.json({
-            message: `The book ${profile.name} has been deleted.`
+            message: `The profile ${profile.name} has been deleted.`
         })
     } catch (error) {
         res.status(500).json({
